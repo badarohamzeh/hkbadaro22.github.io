@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- CIS 341 Assignment: Professional Portfolio Website - Contact Me Page (contact.html) -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - 163343 - Hamzeh Badaro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        // Validate that all fields are filled in before submission
+        function validateForm(event) {
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+            var country = document.getElementById("country").value;
+            var comments = document.getElementById("comments").value;
+
+            // Trim whitespace to ensure fields are genuinely filled
+            if (fullName.trim() == "" || email.trim() == "" || country.trim() == "" || comments.trim() == "") {
+                window.alert("Please fill in all fields (Full Name, Email Address, Country, and Comments) before submitting the form.");
+                if (event) {
+                    event.preventDefault();
+                }
+                return false;
+            }
+
+            // Simple email format check
+            if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+                window.alert("Please enter a valid email address.");
+                if (event) {
+                    event.preventDefault();
+                }
+                return false;
+            }
+
+            // Display simple alert message confirming that the form was submitted successfully
+            window.alert("Thank you, " + fullName + "! Your form has been submitted successfully.");
+            if (event) {
+                event.preventDefault();
+            }
+            document.getElementById("contactForm").reset();
+            return true;
+        }
+
+        function start() {
+            var contactForm = document.getElementById("contactForm");
+            contactForm.addEventListener("submit", validateForm, false);
+        }
+
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+    <!-- Navigation Structure (Simple Menu) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-title">Hamzeh Badaro | Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="contact.html" class="active">Contact Me Page</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <section class="card">
+            <h2>Contact Hamzeh Badaro</h2>
+            <p>
+                Feel free to reach out regarding AI &amp; Computational Neuroscience research, VR biofeedback clinical collaborations (CL-PAVE / MRVision), CS/IT tutoring, or software engineering inquiries. All fields below are required.
+            </p>
+            <p class="student-meta" style="margin-bottom: 18px;">
+                <strong>Direct Contact:</strong> <a href="mailto:hkbadaro22@cit.just.edu.jo" style="color: #0284c7;">hkbadaro22@cit.just.edu.jo</a> &nbsp;|&nbsp;
+                <a href="mailto:Hamzeh.badaro@gmail.com" style="color: #0284c7;">Hamzeh.badaro@gmail.com</a> &nbsp;|&nbsp;
+                <strong>Phone:</strong> +962 77 540 1330 &nbsp;|&nbsp;
+                <strong>Location:</strong> Amman / Irbid, Jordan
+            </p>
+
+            <form id="contactForm" method="post" action="#">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="">-- Select your country --</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="Palestine">Palestine</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Write your message or comments here..."></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" id="submitButton" class="submit-btn" value="Submit">
+                    <input type="reset" class="reset-btn" value="Reset">
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 Hamzeh Badaro (SID: 163343) &mdash; B.Sc. in Computer Science (AI &amp; Computational Neuroscience), Jordan University of Science and Technology (JUST).<br>
+            <a href="https://github.com/badarohamzeh" target="_blank" style="color: #0284c7; text-decoration: none;">github.com/badarohamzeh</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com/in/hamzeh-badaro" target="_blank" style="color: #0284c7; text-decoration: none;">linkedin.com/in/hamzeh-badaro</a>
+        </p>
+    </footer>
+</body>
+</html>

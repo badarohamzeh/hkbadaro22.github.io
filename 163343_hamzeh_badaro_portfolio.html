@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- CIS 341 Assignment: Professional Portfolio Website - Home Page (index.html) -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title includes Student ID (SID) and Full Name -->
+    <title>163343 - Hamzeh Badaro | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Navigation Structure (Simple Menu) -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand-title">Hamzeh Badaro | Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home Page</a></li>
+                <li><a href="contact.html">Contact Me Page</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- 1. Full Name, Major, Academic Level, Professional Photo, and Mailto Link -->
+        <section class="card profile-header">
+            <img src="profile.jpg" width="150" height="150" alt="Professional academic portrait of Hamzeh Badaro" class="profile-photo">
+            <div class="profile-details">
+                <h1>Hamzeh Badaro</h1>
+                <p class="subtitle">Major: Computer Science (Specialization: Artificial Intelligence &amp; Computational Neuroscience) | Academic Level: Fourth Year (2022 &ndash; 2026)</p>
+                <p class="student-meta">
+                    <strong>Student ID (SID):</strong> 163343 &nbsp;|&nbsp;
+                    <strong>University:</strong> Jordan University of Science and Technology (JUST) &nbsp;|&nbsp;
+                    <strong>Location:</strong> Amman / Irbid, Jordan
+                </p>
+                <p class="student-meta">
+                    <strong>Roles:</strong> AI &amp; Computational Neuroscience Research Assistant (JUST) &bull; CS &amp; IT Instructor / Tutor &bull; Founder of Dusur
+                </p>
+                <p>
+                    <a href="mailto:hkbadaro22@cit.just.edu.jo" class="mailto-btn">University Email: hkbadaro22@cit.just.edu.jo</a>
+                    &nbsp;
+                    <a href="mailto:Hamzeh.badaro@gmail.com" class="mailto-btn" style="background-color: #334155;">Personal Email: Hamzeh.badaro@gmail.com</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Profile & Research Highlights from CV -->
+        <section class="card">
+            <h2>Academic Profile &amp; Research Experience</h2>
+            <p>
+                Final-year Computer Science student at Jordan University of Science and Technology (JUST) specializing in Artificial Intelligence and Computational Neuroscience, with research interests spanning neuro-adaptive systems, language-model interpretability, and human-centered AI. Combines hands-on research as a Research Assistant at JUST (2024&ndash;Present) with a multidisciplinary background as a former investigative journalist (2022&ndash;2025), founder of Dusur interior design company, and an IT educator who has mentored 300+ students across programming, algorithms, systems, and AI since 2022.
+            </p>
+            <ul class="skills-list" style="margin-top: 12px;">
+                <li><strong>CL-PAVE (Graduation Project &mdash; In Progress):</strong> Closed-Loop Physiologically-Adaptive VR system for exposure therapy on Meta Quest 3S that modulates intensity in real time using ECG/HRV biofeedback from a Polar H10 sensor (Python biosppy/neurokit2, OSC/UDP streaming, Unreal Engine 5, Meta XR SDK).</li>
+                <li><strong>MRVision:</strong> VR anxiety-reduction system for MRI environments developed in coordination with clinical partners and hospital agreements for real-world deployment.</li>
+                <li><strong>Cross-Lingual Emotion Representation (Manuscript in Preparation):</strong> Probing internal representations and behavioral signatures of emotion across languages in instruction-tuned LLMs (Llama-3-8B-Instruct).</li>
+            </ul>
+        </section>
+
+        <!-- Key Soft Skills -->
+        <section class="card">
+            <h2>Key Soft Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Analytical Thinking &amp; Scientific Inquiry:</strong> Designing experimental pipelines spanning physiological signal acquisition (ECG/HRV), cross-lingual LLM probing, and statistical model evaluation.</li>
+                <li><strong>Problem-Solving:</strong> Engineering end-to-end closed-loop AI and biofeedback VR architectures from theoretical neuroscience models to standalone hardware deployment.</li>
+                <li><strong>Communication &amp; Mentorship:</strong> Teaching and mentoring over 300 Computer Science and IT students since 2022, backed by three years of investigative journalism and documentary storytelling experience.</li>
+                <li><strong>Teamwork &amp; Clinical Collaboration:</strong> Coordinating across academic research labs, hospital clinical partners, and technical development teams to deploy human-centered systems.</li>
+                <li><strong>Adaptability &amp; Entrepreneurial Leadership:</strong> Founding and operating Dusur (Interior Design Company) end-to-end from client acquisition to delivery while self-funding ongoing AI research.</li>
+            </ul>
+        </section>
+
+        <!-- Table of Favorite Programming Languages, Cybersecurity Tools, and Frameworks -->
+        <section class="card">
+            <h2>Favorite Programming Languages, Cybersecurity Tools &amp; Frameworks</h2>
+            <table>
+                <caption>Overview of Technical Stack, Security Tools, and Official Documentation Links</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Application in My Research, Systems &amp; Security Work</th>
+                        <th>Official Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="oddrow">
+                        <td><strong>Python</strong></td>
+                        <td>Programming Language</td>
+                        <td>End-to-end AI pipelines, ECG/HRV signal processing (biosppy, neurokit2), and security automation</td>
+                        <td><a href="https://www.python.org/doc/" target="_blank">python.org/doc</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>C / C++ &amp; SQL</strong></td>
+                        <td>Programming &amp; Query Languages</td>
+                        <td>High-performance Unreal Engine 5 VR modules, systems programming, and relational databases (PostgreSQL, MySQL)</td>
+                        <td><a href="https://www.postgresql.org/docs/" target="_blank">postgresql.org/docs</a></td>
+                    </tr>
+                    <tr class="oddrow">
+                        <td><strong>PyTorch</strong></td>
+                        <td>AI / Deep Learning Framework</td>
+                        <td>Deep learning model training, Llama-3-8B representation probing, PEFT/LoRA fine-tuning, and CUDA acceleration</td>
+                        <td><a href="https://pytorch.org/get-started/locally/" target="_blank">pytorch.org</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wireshark</strong></td>
+                        <td>Cybersecurity &amp; Network Tool</td>
+                        <td>Inspecting real-time OSC/UDP physiological telemetry streams and analyzing network protocol security</td>
+                        <td><a href="https://www.wireshark.org/docs/" target="_blank">wireshark.org/docs</a></td>
+                    </tr>
+                    <tr class="oddrow">
+                        <td><strong>Nmap</strong></td>
+                        <td>Cybersecurity Tool</td>
+                        <td>Network discovery, port scanning, endpoint auditing, and verifying secure local streaming services</td>
+                        <td><a href="https://nmap.org/docs.html" target="_blank">nmap.org/docs.html</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>FastAPI &amp; Docker</strong></td>
+                        <td>Backend &amp; MLOps Frameworks</td>
+                        <td>Building and containerizing secure, reproducible AI inference APIs and Linux-based MLOps deployments</td>
+                        <td><a href="https://fastapi.tiangolo.com/tutorial/" target="_blank">fastapi.tiangolo.com</a></td>
+                    </tr>
+                    <tr class="oddrow">
+                        <td><strong>Unreal Engine 5</strong></td>
+                        <td>VR / XR Framework</td>
+                        <td>Developing standalone Meta Quest 3S therapeutic VR environments (CL-PAVE and MRVision) with Meta XR SDK</td>
+                        <td><a href="https://www.unrealengine.com/unreal-engine-5" target="_blank">unrealengine.com</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>OWASP Top 10</strong></td>
+                        <td>Web &amp; AI Security Framework</td>
+                        <td>Securing web applications, backend APIs, and large language model deployments against injection and data leaks</td>
+                        <td><a href="https://owasp.org/projects/top-ten" target="_blank">owasp.org/projects/top-ten</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Where Do I See Myself in 4 Years? (4-6 sentences) -->
+        <section class="card">
+            <h2>Where Do I See Myself in 4 Years?</h2>
+            <p>
+                In four years, I see myself pursuing doctoral or postdoctoral research at the intersection of AI Security, Computational Neuroscience, and trustworthy human-centered systems while leading applied R&amp;D in clinical and enterprise environments. Building on my B.Sc. in Computer Science at Jordan University of Science and Technology and my CL-PAVE and MRVision projects, I aim to pioneer secure, physiologically-adaptive VR and neuro-technology platforms that protect sensitive biometric and ECG/HRV telemetry through rigorous encryption and privacy-preserving cloud security. Simultaneously, I plan to expand my research on instruction-tuned large language models into adversarial robustness, mechanistic interpretability, and LLM red-teaming to defend frontier AI models against cross-lingual jailbreaks and data poisoning. By combining my technical background in MLOps and deep learning with my experience teaching over 300 IT students and leading Dusur, I also intend to mentor emerging researchers and build resilient, ethically governed AI infrastructure across the region.
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>
+            &copy; 2026 Hamzeh Badaro (SID: 163343) &mdash; B.Sc. in Computer Science (AI &amp; Computational Neuroscience), Jordan University of Science and Technology (JUST).<br>
+            <a href="https://github.com/badarohamzeh" target="_blank" style="color: #0284c7; text-decoration: none;">github.com/badarohamzeh</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com/in/hamzeh-badaro" target="_blank" style="color: #0284c7; text-decoration: none;">linkedin.com/in/hamzeh-badaro</a>
+        </p>
+    </footer>
+</body>
+</html>
